@@ -3,42 +3,61 @@
   <head>
     <title>Cash Register | Mark 10</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
   </head>
 
   <body>
     <div id="app">
       <h1>Cash Register Manager</h1>
-      <p>
+      <p class="description">
         Enter bill amount and given cash by customer & know the minimum number
         of notes you need to return.
       </p>
-      <label for="bill-amount">Bill amount:</label>
-      <input type="text" id="bill-amount" />
-      <br />
-      <label for="cash-given">Cash given:</label>
-      <input type="text" id="cash-given" />
-      <br />
-      <button>Check</button>
+      <div class="cash-container">
+        <p id="error-message"></p>
+
+        <div class="bill-input">
+          <label for="bill-amount">Bill amount:</label>
+          <input type="text" id="bill-amount" />
+          <button id="next-button">Next</button>
+        </div>
+        <br />
+        <div class="cash-input">
+          <label for="cash-given">Cash given:</label>
+          <input type="text" id="cash-given" />
+          <button id="check-button">Check</button>
+        </div>
+        <br />
+      </div>
+
       <hr />
-      <table class="notes-table">
-        <caption>
-          <h3>Return Change</h3>
-        </caption>
-        <tr>
-          <th>Number of notes</th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>Notes</th>
-          <td>2000</td>
-          <td>500</td>
-          <td>100</td>
-          <td>20</td>
-          <td>10</td>
-          <td>5</td>
-          <td>1</td>
-        </tr>
-      </table>
+      <div class="change-table">
+        <table class="notes-table">
+          <caption>
+            <h3>Return Change</h3>
+          </caption>
+          <tr>
+            <th>Number of notes</th>
+            <td class="number-of-notes"></td>
+            <td class="number-of-notes"></td>
+            <td class="number-of-notes"></td>
+            <td class="number-of-notes"></td>
+            <td class="number-of-notes"></td>
+            <td class="number-of-notes"></td>
+            <td class="number-of-notes"></td>
+          </tr>
+          <tr>
+            <th>Notes</th>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
     <script src="src/index.js"></script>

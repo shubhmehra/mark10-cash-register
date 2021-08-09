@@ -1,9 +1,131 @@
+:root {
+  --input-border: #8b8a8b;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+}
+
 body {
   font-family: sans-serif;
   max-width: 600px;
   margin: auto;
-  padding: 2rem;
 }
 #app {
   text-align: center;
+  background: #63b4d1;
+  padding: 2rem;
+}
+
+h1 {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #480355;
+}
+
+.description {
+  display: block;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 1rem;
+}
+div {
+  padding: 0.5rem;
+}
+
+input {
+  font-size: 16px;
+  font-size: Max(16px, 1em);
+  font-family: inherit;
+  padding: 0.5em 0.5em;
+  background-color: #fff;
+  border: 2px solid #8b8a8b;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: hsl(
+    var(--input-focus-h),
+    var(--input-focus-s),
+    var(--input-focus-l)
+  );
+  box-shadow: 0 0 0 3px
+    hsla(
+      var(--input-focus-h),
+      var(--input-focus-s),
+      calc(var(--input-focus-l) + 40%),
+      0.8
+    );
+  outline: 3px solid transparent;
+}
+.bill-input {
+  display: block;
+}
+
+.cash-input {
+  display: none;
+}
+
+.change-table {
+  display: none;
+}
+
+button {
+  padding: 1rem;
+  color: #fff;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  margin: 1rem;
+  width: 40%;
+  cursor: pointer;
+}
+
+#error-message {
+  color: #472c1b;
+  margin: 1rem;
+  text-decoration: underline dotted;
+}
+
+.cash-container {
+  margin-top: 3rem;
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
