@@ -7,7 +7,38 @@
 
   <body>
     <div id="app">
-      <h1>Hello</h1>
+      <h1>Cash Register Manager</h1>
+      <p>
+        Enter bill amount and given cash by customer & know the minimum number
+        of notes you need to return.
+      </p>
+      <label for="bill-amount">Bill amount:</label>
+      <input type="text" id="bill-amount" />
+      <br />
+      <label for="cash-given">Cash given:</label>
+      <input type="text" id="cash-given" />
+      <br />
+      <button>Check</button>
+      <hr />
+      <table class="notes-table">
+        <caption>
+          <h3>Return Change</h3>
+        </caption>
+        <tr>
+          <th>Number of notes</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Notes</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+      </table>
     </div>
 
     <script src="src/index.js"></script>
