@@ -4,8 +4,8 @@ You can use this app as your personal cash counter. You just need to add cash am
 
 ## Demo
 
-Here you can find full source code 👉 https://github.com/shubhmehra/mark06-MinionSpeak
+Here you can find full source code 👉 https://github.com/shubhmehra/mark10-cash-register
 
-Live link ⚡ https://github.com/shubhmehra/mark06-MinionSpeak/edit/main/README.md
+Live link ⚡ https://tewp1.csb.app/
 
   
